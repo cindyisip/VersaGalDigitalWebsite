@@ -1,36 +1,37 @@
-# VersaGal Digital website — VersaLink Keeper update
+# VersaGal Digital website
 
-Complete static site for the existing GitHub Pages website at https://versagaldigital.com.
-This package is based on the current public `cindyisip/VersaGalDigitalWebsite` main
-commit `5712d35e4ee8d67a35637553fd2b19b7f4e20c7b`. Its original website files matched
-the saved website package before this update.
+Complete static website update for https://versagaldigital.com, prepared
+September 21, 2026. Based on the existing public GitHub repository
+`cindyisip/VersaGalDigitalWebsite`, commit
+`688fba787d3569e4ebda47ba462a0b2dec471aef`.
 
-## What changed
+## Included in this update
 
-- Home now introduces VersaLink Keeper with its actual app logo.
-- Apps uses the new name, logo, and current feature summary.
-- Added a dedicated app landing page at `/apps/versalink/`.
-- Support includes adding links, folder order, search, deletion, previews, exports,
-  recovery, sharing, and purchase restoration.
-- Privacy now explains automatic preview requests to external services, local
-  cache, device backups, recovery retention, unencrypted exports, deletion,
-  purchases, and support correspondence.
-- App pages have descriptive page titles, social metadata, keyboard focus,
-  and responsive layouts.
-- The music catalog and its ten Spotify track links, the About page, brand logo,
-  and `CNAME` are preserved.
+- A new VersaPickle Tools app logo: an ivory and court-green V with a lime
+  pickleball, supplied as an opaque 1024 × 1024 PNG.
+- Home, Apps, and About now introduce both VersaLink Keeper and VersaPickle Tools.
+- VersaLink Keeper has real iPhone screenshots, including Fave Restaurants,
+  an iPad section, current features, and free-versus-lifetime pricing.
+- Keeper support includes creating a folder while adding a link, folder order,
+  search, deletion, previews, sharing, exports, recovery, and purchase restoration.
+- Keeper privacy explains local storage, external preview requests, exports,
+  device backups, purchases, and support communications.
+- A new `/apps/versapickle/` page introduces Roster Lookup: imported player names,
+  location filters, review of profile matches, ratings, saved rosters, and CSV export.
+- Responsive layouts, image sizes, descriptive metadata, a sitemap, and robots.txt.
 
-The existing `/apps/versalink/privacy/` and `/apps/versalink/support/` URLs are
-intentionally unchanged. The new display name does not require a new URL slug.
+The music catalog, domain configuration, VersaGal Digital brand assets, and
+existing VersaLink Keeper icon are preserved. The website uses plain HTML and
+CSS; no build step or additional paid hosting is needed.
 
-## Update your existing website repository
+## Update the existing website
 
-Unzip outside your local website repository. Copy the **contents** of the
-`versagal-digital-site` folder into the existing repository root, merging folders
-and replacing matching files. Do not replace or delete the entire repository.
-You do not need to create a new repository, change Porkbun DNS, or redo Pages setup.
+Unzip this download outside your website repository. Copy the **contents** of
+`versagal-digital-site` into your existing `VersaGalDigitalWebsite` folder,
+merging folders and replacing matching files. Keep the existing repository.
+Save or commit any of your own uncommitted website changes before copying.
 
-For a bulk copy in Terminal, replace both paths below with your actual paths:
+For a bulk copy in Terminal, replace these paths with your actual paths:
 
 ```bash
 rsync -av "/path/to/download/versagal-digital-site/" "/path/to/VersaGalDigitalWebsite/"
@@ -39,78 +40,83 @@ git status
 git diff --stat
 ```
 
-The trailing slash after the source folder is intentional: it copies that
-folder's contents into the existing repository. This command does not delete
-files in the destination. If you have uncommitted website edits, save or commit
-them before copying.
-
-After checking the changes:
+The source's trailing slash copies its contents. This command does not delete
+destination files. After reviewing the changes:
 
 ```bash
-git add index.html styles.css apps assets/versalink-keeper-icon.png README.md
-git commit -m "Update website for VersaLink Keeper"
+git add index.html styles.css about apps assets README.md robots.txt sitemap.xml
+git commit -m "Add VersaPickle Tools and refresh VersaLink Keeper launch pages"
 git push
 ```
 
-Your existing GitHub Pages workflow publishes the pushed changes. This download
-does not push to GitHub or change the live website by itself.
+The existing GitHub Pages setup publishes the pushed changes. This package has
+not been pushed and does not change the live website by itself. No new repository,
+DNS changes, or hosting setup are needed.
 
-## Local preview
+## Preview locally
 
-Run this from the website folder, then open http://localhost:8000:
+Run from the website folder, then open http://localhost:8000:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-All internal links also use relative `index.html` paths, so the pages can be
-opened directly for a basic preview. No build step or paid hosting is required.
 The Spotify player and external destinations require an internet connection.
 
-## App Store Connect website URLs
+## App URLs
 
-After the update is published:
+- Keeper marketing: https://versagaldigital.com/apps/versalink/
+- Keeper support: https://versagaldigital.com/apps/versalink/support/
+- Keeper privacy: https://versagaldigital.com/apps/versalink/privacy/
+- VersaPickle Tools: https://versagaldigital.com/apps/versapickle/
 
-- Marketing URL: https://versagaldigital.com/apps/versalink/
-- Support URL: https://versagaldigital.com/apps/versalink/support/
-- Privacy Policy URL: https://versagaldigital.com/apps/versalink/privacy/
+The existing support and privacy URLs remain unchanged. Verify the live pages
+after GitHub Pages finishes deployment.
 
-The support and privacy URLs remain the same as before. Open them in a browser
-after deployment to confirm they show **VersaLink Keeper** and the new logo.
+## Launch details
 
-## Launch status and pricing
+Keeper is marked **Coming soon for iPhone and iPad**. It offers 10 free saved links
+(including archived links), with an optional US$9.99 one-time lifetime unlock.
+Regional prices and taxes may vary; Apple's confirmation shows the final price.
+JSON and CSV exports are free. JSON import and local recovery restore require
+the lifetime unlock. Restores replace the collection rather than merging it.
 
-The site says **Coming soon for iPhone** because no public App Store listing URL
-was supplied. It does not display a download badge or an invented store URL.
-Once the app is publicly available, replace the status on Home, Apps, and the
-app landing page, and add the real App Store link.
+VersaPickle Tools is marked **In development for iPhone**. Its first tool is
+Roster Lookup. Live lookups require DUPR sign-in. The page does not claim a direct
+CourtReserve connection or affiliation with either service. Match tracking and
+outcome prediction are not presented as initial features.
 
-The free plan is described as 10 links including archived links. The one-time
-unlock adds unlimited links, JSON import, and local recovery restore. Exports
-remain free. The site directs users to the purchase screen for the current local
-price rather than hard-coding a price that may differ by storefront.
+Neither app has an invented App Store link or download badge. When each app is
+public, add its real listing link and update its status on Home, Apps, and the
+product page. Update Keeper's support introduction at the same time.
 
-## Privacy and support maintenance
+## Logo and screenshots
 
-The policy reflects the supplied app source as of September 20, 2026. In
-particular, previews are on by default, contact external services, and can be
-turned off in Settings. Keep the policy aligned with later app changes and with
-your actual handling of support emails. It is not a substitute for completing
-App Store Connect's separate privacy questionnaire.
+The new app icon is `assets/versapickle-tools-icon.png`. This website update does
+not install the icon into an Xcode project. The separate 1024 PNG can be used
+for that app's asset catalog when ready.
 
-The website has no added analytics scripts. Its existing Spotify embed and
-GitHub Pages hosting have their own privacy practices, now noted in the policy.
+Keeper screenshots are WebP exports of the supplied real screenshots. The two
+sizes of each image reduce downloads on small screens. The gallery supports
+horizontal scrolling and links to larger images.
 
-Contact addresses are still `support@versagaldigital.com` and
-`privacy@versagaldigital.com`. Verify that your forwarding receives messages.
+## Policy and contact maintenance
 
-Reference: [Apple App Review Guidelines — Privacy](https://developer.apple.com/app-store/review/guidelines/#privacy).
+Keep Keeper's privacy policy aligned with the app's actual behavior. Automatic
+previews contact linked websites and providers; turning them off stops new
+requests but cached information can still appear. This website update does not
+complete App Store Connect's privacy or content-rights declarations.
+
+No new analytics scripts have been added. The existing music page includes
+Spotify's player. Confirm your support and privacy email forwarding receives
+messages at `support@versagaldigital.com` and `privacy@versagaldigital.com`.
 
 ## Validation
 
-All 105 internal file links and fragment targets passed checks. The supplied app
-logo matches the approved iPhone icon. Music, About, the domain setting, and
-existing brand assets were compared byte-for-byte against the previous site.
-Responsive styles were updated, but a browser render could not be completed in
-this environment because the browser download timed out. Preview the new app,
-support, and privacy pages in your browser before pushing.
+All 159 local file references and fragment targets across the eight pages pass.
+The music page, CNAME, original brand assets, and Keeper app icon match the
+existing repository byte for byte. The seven edited or new HTML pages were
+checked in Chromium at 390, 768, and 1440 pixels wide. Images loaded, page widths
+stayed within the viewport, and FAQ controls opened successfully. Home and both
+product pages were visually inspected. The existing music page was preserved;
+external services and live App Store purchases are outside this website check.
