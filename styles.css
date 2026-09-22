@@ -394,12 +394,13 @@ figure { margin: 0; }
   .content-nav { max-height: none; overflow: visible; }
 }
 @media (max-width: 560px) {
-  .nav { flex-wrap: wrap; justify-content: center; gap: 0; padding-top: 10px; }
-  .brand { width: 100%; justify-content: center; font-size: 1.05rem; gap: 9px; }
-  .brand img { width: 34px; height: 34px; }
-  .nav-links { justify-content: center; gap: 30px; }
-  .nav-links a { min-height: 44px; display: inline-flex; align-items: center; }
-  [id] { scroll-margin-top: 120px; }
+  .nav { flex-wrap: nowrap; justify-content: space-between; gap: 8px; padding-block: 8px; }
+  .brand { width: auto; min-width: 0; flex: 0 1 auto; justify-content: flex-start; font-size: .875rem; line-height: 1.25; gap: 6px; }
+  .brand span { min-width: 0; overflow-wrap: anywhere; }
+  .brand img { width: 28px; height: 28px; }
+  .nav-links { flex: 0 0 auto; margin-left: auto; justify-content: flex-end; gap: 8px; }
+  .nav-links a { min-width: 40px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding: 10px 0; font-size: .875rem; }
+  [id] { scroll-margin-top: 104px; }
   .hero-brand-name { bottom: -8px; }
   .footer-app-links { justify-content: flex-start; text-align: left; }
   .app-subnav { gap: 0 16px; padding-block: 8px; }
