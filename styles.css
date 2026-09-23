@@ -412,3 +412,40 @@ figure { margin: 0; }
   .rating-story { padding-top: 56px; }
   .document-hero { padding-top: 42px; }
 }
+
+/* VersaPickle screenshot gallery, interactive demo guide, and launch plans. */
+.pickle-theme .pickle-screen-hero { background: linear-gradient(150deg, #e2ebd3, #f5f8ed); transform: rotate(1.5deg); margin: 0; }
+.pickle-theme .pickle-screen-hero a { display: block; border-radius: 35px; }
+.pickle-theme .pickle-screen-hero img { border-color: #173327; box-shadow: 0 20px 40px rgba(23, 63, 45, .16); }
+.pickle-theme .pickle-screenshots { background: #edf3e3; }
+.pickle-theme .screenshot-gallery { scrollbar-color: #779c41 #e0eacb; }
+.pickle-theme .screenshot-card { margin: 0; }
+.pickle-theme .screenshot-card img { border-color: #173327; }
+.pickle-theme .screenshot-card figcaption { color: #173f2d; }
+.pickle-theme .section-heading .small-note { font-size: .9rem; }
+.pickle-theme .pickle-demo-panel { padding: 44px; background: #fff; border: 1px solid var(--line); border-radius: 28px; box-shadow: 0 20px 50px rgba(23, 63, 45, .06); }
+.pickle-theme .pickle-demo-panel .steps-grid h3 { font-size: 1.35rem; }
+.pickle-theme .pickle-demo-panel .section-note { margin-top: 32px; }
+.pickle-theme .pickle-plans { padding-top: 0; }
+.pickle-theme .pickle-table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 22px; background: #fff; }
+.pickle-theme .pickle-plan-table { width: 100%; border-collapse: collapse; text-align: left; table-layout: fixed; }
+.pickle-theme .pickle-plan-table caption { padding: 18px 22px; text-align: left; color: var(--muted); font-size: .9rem; }
+.pickle-theme .pickle-plan-table th, .pickle-theme .pickle-plan-table td { padding: 20px 22px; vertical-align: top; border-top: 1px solid var(--line); overflow-wrap: break-word; }
+.pickle-theme .pickle-plan-table thead { background: #173f2d; color: #fff; }
+.pickle-theme .pickle-plan-table thead th { font-size: 1.1rem; }
+.pickle-theme .pickle-plan-table th:first-child { width: 24%; }
+.pickle-theme .pickle-plan-table tbody th { color: #173f2d; }
+.pickle-theme .pickle-plan-table td:last-child { background: #f0f6e9; }
+.pickle-theme .pickle-plan-table tbody tr:last-child td, .pickle-theme .pickle-plan-table tbody tr:last-child th { border-bottom: 0; }
+.pickle-theme .faq-answer ol { padding-left: 22px; }
+.pickle-theme .faq-answer li + li { margin-top: 10px; }
+@media (max-width: 820px) {
+  .pickle-theme .pickle-demo-panel { padding: 30px; }
+}
+@media (max-width: 560px) {
+  .pickle-theme .pickle-screen-hero { transform: none; }
+  .pickle-theme .pickle-demo-panel { padding: 26px 20px; }
+  .pickle-theme .pickle-plan-table th, .pickle-theme .pickle-plan-table td { padding: 14px 10px; font-size: .84rem; }
+  .pickle-theme .pickle-plan-table thead th { font-size: .95rem; }
+  .pickle-theme .pickle-plan-table th:first-child { width: 25%; }
+}

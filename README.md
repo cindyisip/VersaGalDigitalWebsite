@@ -3,22 +3,40 @@
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
 `cindyisip/VersaGalDigitalWebsite`. No build step or additional hosting is needed.
 
-## September 22, 2026: VersaPickle Ratings pages
+## September 23, 2026: screenshots, demo, and planned Ratings Plus
 
-- Updated VersaPickle’s existing product URL for Lookup Rosters, My DUPR Progress,
-  and the separate Match Lookup feature.
-- Added dedicated support, privacy, and DUPR data-availability pages.
-- Updated Home, Apps, About, shared navigation, footers, and sitemap.
-- Fixed the company name being hidden by the mobile header stylesheet; the home
-  hero also visibly includes “VersaGal Digital.”
-- Reused the approved VersaPickle icon. The illustrative progression diagram uses
-  fictional data and is explicitly labeled as an illustration, not a screenshot.
-- Retained the existing Keeper product/support/privacy content, music catalog,
-  icons, screenshots, custom domain, and hosting setup. Shared footers now include
-  both apps. The music page also has a canonical URL.
+- Added all seven supplied iPhone screenshots: Home in the product hero, plus
+  roster ratings, screenshot import, progress, timeline, partner statistics,
+  and match rating history in an accessible horizontally scrolling gallery.
+- Each screen has 480px and 800px WebP versions, descriptive alt text, and a
+  larger-image link. The screenshot contents are preserved; they show the
+  development app before the newer demo and paid-tier controls.
+- Added the preferred demo route: Home → Connect your DUPR account → Try Demo
+  without signing in. Documented fictional data, Exit/Reset Demo, and Account →
+  Demo → Show demo on Home, including its remembered preference and defaults.
+- Added a clearly labeled planned Free / Ratings Plus comparison: 3 other
+  roster players plus self, latest 5 matches combined, and a fictional Match
+  Lookup preview on Free; larger rosters, older history, and real Match Lookup
+  on Plus. No price, public purchase link, or release date is promised.
+- Updated Support, Privacy, DUPR & your data, Home, and Apps for these features.
+  Purchase disclosures describe Apple processing and the stable pseudonymous
+  account token when a build has purchases enabled.
+- Preserved the existing brand, mobile header, Keeper pages, music, custom
+  domain, and GitHub Pages setup. No JavaScript or new website dependency.
 
-VersaPickle is marked **Coming soon for iPhone**. No price, purchase button,
-App Store listing, DUPR endorsement, or integration approval is implied.
+### Source and release status
+
+This update starts from repository commit
+`126001d39748f2c35676d3d582684fbc8beba52a`. Feature wording was checked against
+the shared Demo Mode revision 2 and Ratings Plus Update source packages.
+Those are separate app updates; this website change does not merge, build,
+or verify their integration in the uploaded iOS binary. Ratings Plus is
+therefore labeled **planned for launch**, and support/privacy describe
+purchase behavior conditionally. The proposed $9.99 price is not published.
+
+VersaPickle remains **Coming soon for iPhone**, with no App Store download
+link. TestFlight review and DUPR integration permission are separate from
+website readiness. Do not imply either has been approved until confirmed.
 
 ## Preview
 
@@ -78,9 +96,10 @@ The VersaPickle privacy and support text describes the current development app:
 
 Before public release, reconcile this wording with the shipping build and any
 DUPR-approved integration requirements. Review the retained account identity and
-its deletion controls as part of release preparation. StoreKit licensing,
-cross-device purchase restoration, and a paid tier have not been implemented by
-this website update. If those features change data handling, update the policy.
+its deletion controls as part of release preparation. The separately prepared
+Ratings Plus source uses StoreKit for purchase verification and restoration and sends Apple a stable pseudonymous token
+derived from the verified DUPR user ID. The policy now covers that behavior
+when enabled. Reconcile it with the combined shipping build before release.
 
 DUPR permission has been requested, not granted. Website readiness does not
 establish approval for the app integration or replace App Store review. The
@@ -100,18 +119,15 @@ that privacy disclosures and App Store Connect answers match actual behavior.
 
 ## Validation of this update
 
-- All 268 local file references and fragment targets across 11 HTML pages pass.
-- Main content in all three Keeper pages and the music page matches the base
-  repository. Assets and domain configuration are unchanged.
-- Browser checks covered Home, Apps, About, VersaPickle’s four pages, and Keeper’s
-  three pages at 320, 390, 768, and 1440 CSS pixels. The two enlarged-text layout
-  fixes were rechecked at mobile/desktop widths; all four 150% root-text checks
-  pass. The initial offscreen-image check was corrected to load lazy images
-  before assessing them. No missing image file was found.
-- Home, product, support, and privacy layouts were visually inspected in Chromium.
-  FAQ expand/collapse controls work. This is not a Safari or on-device iOS test.
-- The installer passed preflight, conflicting-local-edit refusal, backup integrity,
-  complete update, repeat-install, and unrelated-file preservation checks.
+- All 318 local references and fragment targets across 11 HTML pages resolve.
+- Chromium checks passed for Home, Apps, and the four VersaPickle pages at
+  320, 390, 768, and 1440 CSS pixels. Product and privacy also passed at 150%
+  root text size on mobile. No page overflow or missing images was found.
+- Verified keyboard scrolling in the gallery, larger-image links, and demo
+  FAQ expansion. Checked the retained Keeper product page at mobile width.
+- Visually inspected desktop and mobile product layouts, the demo guide, and
+  the feature comparison. These are Chromium checks, not on-device Safari tests.
+- All 14 WebP variants are valid RGB images at their expected dimensions.
 
-The public GitHub repository was read successfully, but this workspace had no
-GitHub write authentication. The update has not been pushed or deployed.
+Local source edits are not a deployment: check GitHub Pages after committing
+and pushing. The delivery package includes the patch and publishing steps.
