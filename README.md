@@ -131,3 +131,12 @@ that privacy disclosures and App Store Connect answers match actual behavior.
 
 Local source edits are not a deployment: check GitHub Pages after committing
 and pushing. The delivery package includes the patch and publishing steps.
+
+## Versa Squabble Duo
+
+- Product: `/apps/versasquabbleduo/`
+- App Store support URL: `https://versagaldigital.com/apps/versasquabbleduo/support/`
+- Privacy URL: `https://versagaldigital.com/apps/versasquabbleduo/privacy/`
+- Uses the supplied app icon and four actual iPhone screenshots, resized to 480/800px WebP without changing the screens.
+- Marked Coming soon with planned US$4.99 upfront pricing. Add the real App Store link after release.
+- Privacy copy reflects local history, server-backed online rooms, and optional WebRTC voice. Update it when data handling changes.
