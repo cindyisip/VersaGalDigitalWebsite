@@ -137,6 +137,6 @@ and pushing. The delivery package includes the patch and publishing steps.
 - Product: `/apps/versasquabbleduo/`
 - App Store support URL: `https://versagaldigital.com/apps/versasquabbleduo/support/`
 - Privacy URL: `https://versagaldigital.com/apps/versasquabbleduo/privacy/`
-- Uses the supplied app icon and four actual iPhone screenshots, resized to 480/800px WebP without changing the screens.
+- Supports iPhone and iPad. Uses the supplied app icon, four iPhone screenshots at 480/800px, and four iPad screenshots at 600/1000px WebP. Screens retain their original proportions.
 - Marked Coming soon with planned US$4.99 upfront pricing. Add the real App Store link after release.
 - Privacy copy reflects local history, server-backed online rooms, and optional WebRTC voice. Update it when data handling changes.
