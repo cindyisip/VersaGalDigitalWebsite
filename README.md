@@ -215,3 +215,13 @@ visually inspected. These are browser checks, not physical-phone acceptance.
 
 Publishing uses the existing GitHub Pages main-branch workflow. No DNS, hosting,
 application backend, staging account or production application change is needed.
+
+### Feature showcase appearance switch
+
+The shared light/dark feature infographic is now one viewer with Light and Dark
+buttons. Switching updates the image, responsive sources, alt text, caption and
+both full-size links together; the selected choice is remembered on this device
+when browser storage is available. This changes the infographic preview, not
+the whole website theme. Without JavaScript, the light image and direct links
+to both versions remain available. Checked both directions, reload persistence,
+keyboard operation, no-JavaScript access, and mobile/desktop layout.

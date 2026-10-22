@@ -225,5 +225,10 @@
  .vop-site h2,.vop-site h3 { break-after:avoid; }
 }
 
-.vop-dark-showcase { margin-top:20px; border:1px solid var(--line); border-radius:14px; background:#fff; padding:16px 20px; }
-.vop-dark-showcase summary { cursor:pointer; color:#075b7b; font-weight:750; }
+
+.vop-showcase-switch { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; margin:24px 0 12px; }
+.vop-showcase-switch>span { color:var(--muted); font-size:.9rem; font-weight:650; }
+.vop-showcase-switch [role=group] { display:inline-flex; gap:4px; padding:4px; border:1px solid #9ab9ca; border-radius:999px; background:#fff; }
+.vop-showcase-switch button { min-height:44px; min-width:86px; padding:9px 20px; border:0; border-radius:999px; font:inherit; font-size:.92rem; font-weight:750; color:#075477; background:transparent; cursor:pointer; }
+.vop-showcase-switch button[aria-pressed=true] { color:#fff; background:#075477; }
+.vop-showcase-switch + .vop-infographic { margin-top:12px; }

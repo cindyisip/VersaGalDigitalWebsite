@@ -1,5 +1,33 @@
 /* Progressive enhancements; all core help content is readable without scripts. */
 (() => {
+  const showcase = document.querySelector('[data-showcase]');
+  const showcaseControls = document.querySelector('[data-showcase-controls]');
+  if (showcase && showcaseControls) {
+    const image = showcase.querySelector('img');
+    const links = [...showcase.querySelectorAll('a')];
+    const choices = [...showcaseControls.querySelectorAll('[data-showcase-choice]')];
+    function chooseShowcase(theme) {
+      const name = theme === 'dark' ? 'Dark' : 'Light';
+      const swap = value => value.replace(/showcase-(light|dark)/g, `showcase-${theme}`);
+      image.setAttribute('srcset', swap(image.getAttribute('srcset')));
+      image.setAttribute('src', swap(image.getAttribute('src')));
+      image.alt = `${name}-mode feature showcase: shared game statistics, calendar, club leaderboard, recorded scores and tournaments.`;
+      links.forEach(link => {
+        link.setAttribute('href', swap(link.getAttribute('href')));
+        if (link.hasAttribute('aria-label')) link.setAttribute('aria-label', `Open full-size ${name.toLowerCase()}-mode feature showcase`);
+      });
+      showcase.querySelector('[data-showcase-caption]').textContent = name;
+      choices.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.showcaseChoice === theme)));
+      try { localStorage.setItem('vop-showcase-theme', theme); } catch (_) { /* Choice still works without storage. */ }
+    }
+    let preferred = 'light';
+    try { if (localStorage.getItem('vop-showcase-theme') === 'dark') preferred = 'dark'; } catch (_) { /* Keep the initial light view. */ }
+    chooseShowcase(preferred);
+    choices.forEach(button => button.addEventListener('click', () => chooseShowcase(button.dataset.showcaseChoice)));
+    showcaseControls.hidden = false;
+    document.querySelector('[data-showcase-fallback]').hidden = true;
+  }
+
   const demo = document.querySelector('[data-membership-demo]');
   if (demo) {
     const players = [...demo.querySelectorAll('[data-player]')];
