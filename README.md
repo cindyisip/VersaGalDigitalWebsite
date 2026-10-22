@@ -140,3 +140,23 @@ and pushing. The delivery package includes the patch and publishing steps.
 - Supports iPhone and iPad. Uses the supplied app icon, four iPhone screenshots at 480/800px, and four iPad screenshots at 600/1000px WebP. Screens retain their original proportions.
 - Marked Coming soon with planned US$4.99 upfront pricing. Add the real App Store link after release.
 - Privacy copy reflects local history, server-backed online rooms, and optional WebRTC voice. Update it when data handling changes.
+
+## Versa Open Play — October 22, 2026
+
+- Added Versa Open Play to the homepage and Apps catalog, using its existing
+  app icon from `cindyisip/VersaOpenPlay` (`web/public/versa-open-play-icon.png`).
+- The homepage uses a two-by-two app grid on desktop and retains the existing
+  single-column mobile layout.
+- Both listings link to https://versa-open-play-stg.versagal-digital.workers.dev
+  and explicitly describe the staging/tester phase.
+- Copy covers solo-entered game records, guest claims, opposing-player score
+  verification, stats/leaderboards and tournament schedules/results/brackets.
+  Checked against the application repository’s current DEVELOPMENT_HANDOFF.md.
+- No production launch date, App Store availability, paid subscription offer,
+  official rating integration or exhaustive club directory is promised.
+- When a production release is ready, replace the testing link and reconcile
+  the status and feature copy on both pages.
+- Validation: all 410 local file/fragment references across 14 pages resolve.
+  Chromium checks passed for Home and Apps at 320, 390, 768 and 1440 CSS pixels:
+  four apps per page, working logo assets, correct tester links and no horizontal
+  overflow. Desktop and mobile listings were visually inspected.
