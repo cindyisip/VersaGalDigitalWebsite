@@ -160,3 +160,58 @@ and pushing. The delivery package includes the patch and publishing steps.
   Chromium checks passed for Home and Apps at 320, 390, 768 and 1440 CSS pixels:
   four apps per page, working logo assets, correct tester links and no horizontal
   overflow. Desktop and mobile listings were visually inspected.
+
+## Versa Open Play product and help section — October 22, 2026
+
+- Product: `/apps/versaopenplay/`
+- Illustrated player guide: `/apps/versaopenplay/guide/`
+- Tournament format comparison: `/apps/versaopenplay/tournaments/`
+- Searchable FAQ (43 answers): `/apps/versaopenplay/faq/`
+- Home and Apps now lead to the product section; existing pages link to its
+  Features, Guide and FAQ from their footers. The sitemap includes all four pages.
+- All four owner-supplied infographics are included as uncropped, proportionally
+  preserved WebP images at 960px and original resolution. Light and dark
+  showcases are available; proxy and tournament stories have full-size links.
+  Original uploaded source files remain unchanged.
+- Club/group walkthrough illustrations are HTML guidance with sample data,
+  not screenshots or working account forms. The membership simulator is local
+  illustration only. No account, group or club is created by the website.
+- FAQ search/category controls progressively enhance native details elements.
+  Core answers, walkthroughs and rule tables remain usable without JavaScript.
+
+### Content source and limits
+
+Reviewed the application `feature/v2-tournaments` User Guide, FAQ, current
+feature index, operational handoff and current Clubs, Groups, LocationEditor
+and InternationalLocationPicker controls on October 22, 2026. Source guide blob:
+`86c7773ec10a03867ad627473cca33fd8edb9e6e`; FAQ blob:
+`45962ba506eca1512e3ec2829fc1e840cafe372b`.
+
+The existing manual still contains a US-only club paragraph; the website's
+Country/Region/selected-city instructions follow the current international
+LocationEditor controls instead. Group qualification follows the documented
+current accepted-membership behavior, rather than an older at-time-of-play
+helper sentence in the group-creation form. The website does not change the app.
+
+The inspected handoff reports staging RC70 deployed, with RC71 cycle-navigation
+work not yet deployed. The website explains established KOTC rules without
+promising the unreleased cycle-page transition. Update this content alongside
+future app changes, rather than automatically exposing development-only changes.
+
+Staging warnings, data-reset/no-production-transfer wording, Free's 14 local
+calendar dates and simulated VOP+ with no payment are explicit. No production
+price/date, App Store release, official ratings integration, exhaustive venue
+coverage, offline saving, manual schedule editor or forfeit handling is promised.
+
+### Validation
+
+Local references/fragments/srcset targets and new WebP decoding were checked.
+Chromium: 24 page/viewport checks cover Home, Apps and all four new pages at
+320, 390, 768 and 1440 CSS pixels, with no horizontal viewport overflow, missing
+images or page errors. Also checked FAQ search/categories/empty state/deep links,
+accepted-membership scenarios, JavaScript-disabled content and 150% root text at
+390px. Desktop/mobile hero, club instructions, membership example and FAQ were
+visually inspected. These are browser checks, not physical-phone acceptance.
+
+Publishing uses the existing GitHub Pages main-branch workflow. No DNS, hosting,
+application backend, staging account or production application change is needed.
