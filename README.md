@@ -3,6 +3,23 @@
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
 `cindyisip/VersaGalDigitalWebsite`. No build step or additional hosting is needed.
 
+## October 27, 2026: Versa Squabble Duo current-build refresh
+
+- Replaced the older iPhone and iPad galleries with current app screenshots.
+- Updated the product and Support pages for the current automatic claim flow:
+  tap **I Found a Word**, select letters immediately, use the brief 3…2…1…
+  **Cancel Claim** window for accidental taps, use **Clear** to restart the
+  selection, and tap the valid assembled word itself to claim it.
+- Documented **I Can’t Find the Word 😢**, configurable 3+ through 7+ minimum
+  word lengths, collapsed Game Settings, remembered player name, randomized
+  tile orientation in every mode, and the rule that adding only S is not a steal.
+- Kept the app marked **Coming soon** and retained the planned US$4.99 one-time
+  price. Add the verified App Store link and change the release status only after
+  the listing is publicly available.
+- Refreshed the Home and Apps summaries so they match the detailed product page.
+- This website update does not change the app, online server, Universal Link
+  entitlement, or the planned post-launch `/play` landing behavior.
+
 ## September 23, 2026: screenshots, demo, and planned Ratings Plus
 
 - Added all seven supplied iPhone screenshots: Home in the product hero, plus
