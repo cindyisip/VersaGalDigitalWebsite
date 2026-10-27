@@ -3,6 +3,26 @@
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
 `cindyisip/VersaGalDigitalWebsite`. No build step or additional hosting is needed.
 
+## October 27, 2026: VersaLink Keeper App Store launch
+
+- Updated Home, Apps, the Keeper product page, and Support from pre-release
+  wording to public availability for iPhone and iPad.
+- Added five download links to the verified US App Store listing:
+  https://apps.apple.com/us/app/versalink-keeper/id6814263200
+- Apple’s public lookup identifies app ID `6814263200`, bundle ID
+  `com.versagal.VersaLink`, seller `CYNTHIA VERGARA ISIP`, and version `1.0`.
+  The product listing returned HTTP 200 with the VersaLink Keeper title.
+- Added the product page’s native Safari Smart App Banner metadata and updated
+  its search/social description. Retained existing screenshots, features,
+  10-link free tier, US$9.99 lifetime pricing, support, and privacy content.
+- Other apps’ release statuses and existing hosting/domain settings are unchanged.
+- Validation: all 671 local asset/link/fragment references across 18 HTML pages
+  resolve; all five download links match the verified listing; `git diff --check`
+  passes. Chromium responsive checks covered all four edited pages at 320px
+  and 390px content widths without horizontal overflow. Product desktop and
+  mobile layouts were visually inspected. These are browser checks, not
+  physical iPhone or iPad tests.
+
 ## October 27, 2026: Versa Squabble Duo current-build refresh
 
 - Replaced the older iPhone and iPad galleries with current app screenshots.
