@@ -3,6 +3,21 @@
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
 `cindyisip/VersaGalDigitalWebsite`. No build step or additional hosting is needed.
 
+## October 28, 2026: Keeper 2.0 preview and sharing help
+
+- Added upcoming version 2.0 links on Home and Apps, a product-page feature
+  section and sharing walkthrough, and support answers for Share Sheet favorites,
+  pending imports, duplicates, and the free limit.
+- Version 1.0 remains available; version 2.0 is explicitly awaiting App Store
+  release. Do not change that status until the update is publicly released.
+- Kept existing App Store links, pricing, screenshots, and hosting. The gallery
+  now identifies its screenshots as version 1.0.
+- Source: Keeper feature/share-extension through commit
+  955c584cfd48821630062f1456c6196bc72db32a and the owner’s device testing.
+- Reuses existing responsive components; no CSS, scripts, dependencies, or
+  application code changed. New links and section IDs checked against source.
+  Browser visual verification was not performed for this text update.
+
 ## October 27, 2026: VersaLink Keeper App Store launch
 
 - Updated Home, Apps, the Keeper product page, and Support from pre-release
