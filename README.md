@@ -3,6 +3,14 @@
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
 `cindyisip/VersaGalDigitalWebsite`. No build step or additional hosting is needed.
 
+## October 31, 2026: Keeper 2.0 released
+
+- Owner confirmed version 2.0 is released. Updated Home, Apps, the Keeper
+  product page, and sharing FAQ from upcoming to available now.
+- Retained sharing instructions, App Store links, and version 1.0 screenshot labels.
+- Version 2.0.1 title-lookup changes are not advertised as released.
+- Text-only update; existing layout, assets, and link targets are preserved.
+
 ## October 28, 2026: Keeper 2.0 preview and sharing help
 
 - Added upcoming version 2.0 links on Home and Apps, a product-page feature
