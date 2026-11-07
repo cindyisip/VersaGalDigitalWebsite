@@ -462,3 +462,79 @@ figure { margin: 0; }
 .open-play-card .app-card-top { flex-wrap: wrap; }
 .open-play-visual { background: linear-gradient(145deg, #dfefff, #d8f7f3); }
 .open-play-button { background: #075477; border-color: #075477; padding-block: 12px; text-align: center; }
+
+
+/* App identity themes for Home and the Apps catalog. */
+.app-home-card.squabble-card, .product-card.squabble-card {
+  border-color: rgba(42, 207, 192, .32);
+  background: linear-gradient(140deg, #102c47, #145765);
+  color: #edf8fa;
+}
+.app-home-card.squabble-card::after { background: rgba(45, 211, 195, .18); z-index: 0; }
+.app-home-card.squabble-card > * { position: relative; z-index: 1; }
+.squabble-card h2, .squabble-card h3 { color: #f7fcfd; }
+.squabble-card p { color: #d4e8eb; }
+.squabble-card .app-card-meta { color: #aee8e6; }
+.squabble-card .text-link, .squabble-card .product-links a { color: #94f2e2; }
+.squabble-card .badge, .squabble-badge { border: 1px solid rgba(91, 237, 218, .32); background: rgba(67, 220, 203, .14); color: #a5fff0; }
+.squabble-card .button:not(.secondary) { border-color: #43dcca; background: #43dcca; color: #0c2a42; }
+.squabble-card .button.secondary { border-color: rgba(226, 248, 250, .3); background: rgba(255, 255, 255, .1); color: #f3ffff; }
+.squabble-card .product-visual { background: linear-gradient(145deg, #102d49, #216c72); }
+.squabble-release-note { color: #d4e8eb !important; }
+
+.app-home-card.tally-home-card, .product-card.tally-product-card {
+  border-color: rgba(16, 185, 129, .28);
+  background: linear-gradient(140deg, #ffffff, #eaf8f0);
+  color: #101a30;
+}
+.app-home-card.tally-home-card::after { background: rgba(16, 185, 129, .17); }
+.tally-home-card h3, .tally-product-card h2 { color: #0d172a; }
+.tally-home-card p, .tally-product-card p { color: #526779; }
+.tally-home-card .app-card-meta { color: #35624f; }
+.tally-home-card .text-link, .tally-product-card .product-links a { color: #047857; }
+.tally-home-badge, .tally-product-badge { border: 1px solid rgba(4, 120, 87, .15); background: rgba(16, 185, 129, .13); color: #047857; }
+.tally-product-card .tally-visual { background: linear-gradient(145deg, #d1fae5, #a7f3d0); }
+.tally-product-card .tally-visual img { width: min(50%, 150px); }
+.tally-product-card .tally-product-button { border-color: #10b981; background: #10b981; color: #062b24; }
+
+.app-home-card.poker-home-card, .product-card.poker-card {
+  border-color: rgba(32, 189, 131, .35);
+  background: linear-gradient(140deg, #0a1d14, #164832);
+  color: #eef8f2;
+}
+.app-home-card.poker-home-card::after { background: rgba(32, 189, 131, .16); }
+.poker-home-card h3, .poker-card h2 { color: #f4fbf6; }
+.poker-home-card p, .poker-card p { color: #d0e3d7; }
+.poker-home-card .app-card-meta { color: #a8d7bd; }
+.poker-home-card .text-link, .poker-card .product-links a { color: #8ee9bd; }
+.poker-home-card .poker-badge, .poker-card .poker-badge { border: 1px solid rgba(32, 189, 131, .28); background: #e3f6ed; color: #07583c; }
+.poker-card .poker-visual { background: linear-gradient(145deg, #0b1913, #174a34); }
+.poker-card .poker-button { border-color: #20bd83; background: #20bd83; color: #062418; }
+.poker-card .small-note { color: #d0e3d7; }
+
+/* Versa Squabble Duo's product page uses its navy and teal identity. */
+body.squabble-theme {
+  --ink: #10283d;
+  --muted: #536b78;
+  --plum-700: #087b83;
+  --plum-900: #102d49;
+  --lavender-50: #f6fbfc;
+  --lavender-100: #e3f3f4;
+  --lavender-200: #c8e9e9;
+  --lavender-300: #a5dcdc;
+  --lavender-500: #20a8ad;
+  --line: rgba(16, 45, 73, .14);
+  --shadow: 0 24px 64px rgba(16, 45, 73, .11);
+  color: #10283d;
+  background: radial-gradient(circle at 8% 3%, rgba(60, 206, 194, .17), transparent 32rem), radial-gradient(circle at 92% 17%, rgba(96, 174, 190, .13), transparent 28rem), #f6fbfc;
+}
+.squabble-theme .site-header { background: rgba(246, 251, 252, .92); }
+.squabble-theme .app-screen-hero { border-color: rgba(25, 122, 139, .18); background: linear-gradient(150deg, #d8eff1, #edf9f9); }
+.squabble-theme .screenshot-section, .squabble-theme .feature-section { background: #e8f5f6; border-color: rgba(16, 45, 73, .12); }
+.squabble-theme .screenshot-gallery { scrollbar-color: #2aa9aa #d6ebed; }
+.squabble-theme .help-banner { border-color: rgba(16, 45, 73, .15); background: #e3f3f4; }
+.squabble-theme .status-dot { background: #27c7b7; }
+.squabble-theme .button:not(.secondary) { border-color: #20bdad; background: #20bdad; color: #102d49; }
+.squabble-theme .button.secondary { border-color: rgba(16, 45, 73, .2); color: #102d49; }
+.squabble-theme .badge { border: 1px solid rgba(8, 123, 131, .16); background: #e3f3f4; color: #087b83; }
+.squabble-theme .launch-status { color: #536b78; }
