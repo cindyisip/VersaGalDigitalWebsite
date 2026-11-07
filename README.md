@@ -301,3 +301,21 @@ when browser storage is available. This changes the infographic preview, not
 the whole website theme. Without JavaScript, the light image and direct links
 to both versions remain available. Checked both directions, reload persistence,
 keyboard operation, no-JavaScript access, and mobile/desktop layout.
+
+
+## November 7, 2026: VersaTally website and feature showcase
+
+Added a dedicated VersaTally product page at `/apps/versatally/`, using the
+navy-and-mint app identity and official VersaTally logo. Home and Apps now link
+to the overview; the sitemap includes the new canonical page.
+
+The page introduces Travel, Household, and General expense spaces; receipt
+scanning with editable itemized review; equal, custom, and percentage splits;
+multiple payers; context balances and suggested payments; partial settlements;
+recurring household expenses; and foreign-currency details. Four optimized WebP app screens show the summary, receipt review, suggested
+payments, and Household month view. The gallery is labeled as sample app data.
+
+Availability is clearly marked as in development with no public download link.
+The current development build is described as storing expense records on the
+device; sign-in and device-to-device sync are still in development. Support
+links use the existing VersaGal Digital support email.

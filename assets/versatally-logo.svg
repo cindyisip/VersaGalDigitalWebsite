@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 88" role="img" aria-label="VersaTally">
+  <rect x="4" y="6" width="76" height="76" rx="20" fill="#f8fafc"/>
+  <path d="M21 21 40 68" fill="none" stroke="#0f172a" stroke-width="14" stroke-linecap="round"/>
+  <path d="m35 47 11 17 28-46" fill="none" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="96" y="59" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.6" fill="#0f172a">Versa</text>
+  <text x="210" y="59" font-family="Avenir Next, Inter, Arial, sans-serif" font-size="43" font-weight="700" letter-spacing="-1.6" fill="#10b981">Tally</text>
+</svg>
