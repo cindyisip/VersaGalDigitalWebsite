@@ -82,3 +82,15 @@ body.poker-theme .text-link, body.poker-theme .article a { color: var(--poker-gr
   .poker-gallery figure { flex-basis:74vw; }
   .poker-contact-card, .poker-faq-list { padding:22px; }
 }
+
+.poker-method-note { margin:28px 0 0; padding:18px 22px; border-left:4px solid var(--poker-bright); border-radius:0 14px 14px 0; background:rgba(227,246,237,.75); color:#405c4b; }
+.poker-player-section .section-heading { max-width:820px; }
+.poker-stat-highlights { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:18px; margin:8px 0 34px; }
+.poker-stat-highlights article { padding:24px; border:1px solid rgba(16,36,26,.1); border-radius:20px; background:rgba(255,255,255,.82); }
+.poker-stat-highlights h3 { margin:0 0 10px; color:var(--poker-ink); }
+.poker-stat-highlights p { margin:0; color:#50685a; }
+.poker-gallery--players figure { flex-basis:clamp(250px,30vw,330px); }
+.poker-gallery--stats figure { flex-basis:clamp(220px,25vw,280px); }
+@media (max-width:780px) {
+  .poker-stat-highlights { grid-template-columns:1fr; }
+}

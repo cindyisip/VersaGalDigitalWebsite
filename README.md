@@ -3,10 +3,12 @@
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
 `cindyisip/VersaGalDigitalWebsite`. No build step or additional hosting is needed.
 
-## November 7, 2026: Versa Poker Live Notes and Stats website pages
+## November 7, 2026: Versa Poker website and product marketing
 
 - Added the Versa Poker Live Notes and Stats marketing page, support page, and links on Home, Apps, and site footers.
 - Added the app icon and current iPhone screenshots. The app is labeled **In development**; the site does not offer a public App Store download link.
+- Expanded the overview to market rapid live-table logging, street-by-street and familiar-player hand histories, position results, premium starting-hand results, core stats, and possible-leak review.
+- Added the supplied hand-history, showdown, player-history, and analytics screenshots in optimized WebP format.
 - The iOS Build 36 upload to App Store Connect succeeded. TestFlight access and public App Store availability are not represented as open.
 - Support and Marketing URLs:
   - Marketing: https://versagaldigital.com/apps/versapoker/
