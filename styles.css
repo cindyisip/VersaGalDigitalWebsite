@@ -538,3 +538,22 @@ body.squabble-theme {
 .squabble-theme .button.secondary { border-color: rgba(16, 45, 73, .2); color: #102d49; }
 .squabble-theme .badge { border: 1px solid rgba(8, 123, 131, .16); background: #e3f3f4; color: #087b83; }
 .squabble-theme .launch-status { color: #536b78; }
+
+
+/* Improve text contrast inside the dark Versa Squabble Duo and Poker catalog cards. */
+.app-catalog .product-card.squabble-card p,
+.app-catalog .product-card.squabble-card .compact-features,
+.app-catalog .product-card.squabble-card .compact-features li {
+  color: #f3fcfd;
+}
+.app-catalog .product-card.squabble-card .squabble-release-note {
+  color: #f3fcfd !important;
+}
+.app-catalog .product-card.poker-card p,
+.app-catalog .product-card.poker-card .compact-features,
+.app-catalog .product-card.poker-card .compact-features li {
+  color: #f1fbf4;
+}
+.app-catalog .product-card.poker-card .small-note {
+  color: #f1fbf4;
+}
