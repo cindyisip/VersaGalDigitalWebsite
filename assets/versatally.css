@@ -105,3 +105,33 @@
 .tally-product-card .tally-visual img { width: min(50%, 150px); }
 .tally-product-card .tally-product-button { border-color: #10b981; background: #10b981; color: #062b24; }
 .tally-button-row { justify-content: center; }
+
+
+/* VersaTally support and FAQ page */
+.tally-support-hero { padding: 54px 0 34px; }
+.tally-support-hero h1 { max-width: 850px; font-size: clamp(2.6rem, 5.7vw, 4.5rem); }
+.tally-support-hero .lead { max-width: 760px; color: var(--tally-muted); }
+.tally-support-layout { display: grid; grid-template-columns: minmax(250px, .72fr) minmax(0, 1.5fr); gap: 34px; align-items: start; padding-top: 24px; padding-bottom: 100px; }
+.tally-support-card { position: sticky; top: 24px; padding: 28px; border: 1px solid var(--tally-line); border-radius: 24px; background: rgba(255,255,255,.88); box-shadow: 0 12px 34px rgba(16,26,48,.06); }
+.tally-support-card h2 { margin-bottom: 12px; font-size: 1.55rem; }
+.tally-support-card p { color: var(--tally-muted); }
+.tally-support-email { margin: 16px 0 6px; font-size: .94rem; }
+.tally-support-email a, .tally-support-link, .tally-faq-answer a { color: var(--tally-green); }
+.tally-support-note { font-size: .88rem; }
+.tally-support-link { display: inline-block; margin-top: 12px; font-weight: 720; text-decoration: none; }
+.tally-faq-list { min-width: 0; padding: 32px 38px; border: 1px solid var(--tally-line); border-radius: 24px; background: rgba(255,255,255,.9); box-shadow: 0 12px 34px rgba(16,26,48,.05); }
+.tally-faq-list h2 { margin: 0 0 12px; font-size: 1.85rem; }
+.tally-faq-list details { border-bottom: 1px solid var(--tally-line); }
+.tally-faq-list summary { cursor: pointer; padding: 20px 4px; color: var(--tally-ink); font-size: 1.02rem; font-weight: 740; }
+.tally-faq-list summary::marker { color: var(--tally-green); }
+.tally-faq-answer { padding: 0 4px 17px 22px; color: var(--tally-muted); }
+.tally-faq-answer p { margin: 0; }
+.tally-faq-answer a { font-weight: 650; }
+@media (max-width: 780px) {
+  .tally-subnav { align-items: flex-start; flex-direction: column; }
+  .tally-subnav nav { flex-wrap: wrap; gap: 12px 18px; }
+  .tally-support-hero { padding-top: 36px; }
+  .tally-support-layout { grid-template-columns: 1fr; gap: 20px; padding-bottom: 64px; }
+  .tally-support-card { position: static; }
+  .tally-faq-list { padding: 24px 22px; }
+}
