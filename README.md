@@ -1,5 +1,16 @@
 # VersaGal Digital website
 
+## November 6, 2026: App catalog themes and Versa Squabble Duo approval
+
+- Updated the Home and Apps catalog cards to use app-specific identity colors:
+  navy and teal for Versa Squabble Duo, navy and mint for VersaTally, and forest
+  green and emerald for Versa Poker Live Notes and Stats. Existing VersaLink,
+  VersaPickle, and Versa Open Play card themes are retained.
+- Updated the Versa Squabble Duo product page with its navy and teal theme and
+  Apple approval status. The public App Store link is still pending, so the
+  website does not claim public downloads are available.
+- VersaTally and Versa Poker remain in development.
+
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
 `cindyisip/VersaGalDigitalWebsite`. No build step or additional hosting is needed.
 
@@ -214,7 +225,7 @@ and pushing. The delivery package includes the patch and publishing steps.
 - App Store support URL: `https://versagaldigital.com/apps/versasquabbleduo/support/`
 - Privacy URL: `https://versagaldigital.com/apps/versasquabbleduo/privacy/`
 - Supports iPhone and iPad. Uses the supplied app icon, four iPhone screenshots at 480/800px, and four iPad screenshots at 600/1000px WebP. Screens retain their original proportions.
-- Marked Coming soon with planned US$4.99 upfront pricing. Add the real App Store link after release.
+- Apple has approved the app for App Store release. The public download URL is pending; add the verified listing link when it becomes available. Planned US$4.99 one-time price.
 - Privacy copy reflects local history, server-backed online rooms, and optional WebRTC voice. Update it when data handling changes.
 
 ## Versa Open Play — October 22, 2026
