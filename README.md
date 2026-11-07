@@ -3,6 +3,16 @@
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
 `cindyisip/VersaGalDigitalWebsite`. No build step or additional hosting is needed.
 
+## November 7, 2026: Versa Poker Live Notes and Stats website pages
+
+- Added the Versa Poker Live Notes and Stats marketing page, support page, and links on Home, Apps, and site footers.
+- Added the app icon and current iPhone screenshots. The app is labeled **In development**; the site does not offer a public App Store download link.
+- The iOS Build 36 upload to App Store Connect succeeded. TestFlight access and public App Store availability are not represented as open.
+- Support and Marketing URLs:
+  - Marketing: https://versagaldigital.com/apps/versapoker/
+  - Support: https://versagaldigital.com/apps/versapoker/support/
+- Updated the sitemap and URL reference. The marketing page describes one free trial session (up to 30 saved hands) and the US$9.99 one-time full-app unlock.
+
 ## October 31, 2026: Keeper 2.0 released
 
 - Owner confirmed version 2.0 is released. Updated Home, Apps, the Keeper
@@ -131,6 +141,10 @@ Pages deployment status after pushing and verify the public URLs below.
 | Keeper marketing | https://versagaldigital.com/apps/versalink/ |
 | Keeper support | https://versagaldigital.com/apps/versalink/support/ |
 | Keeper privacy | https://versagaldigital.com/apps/versalink/privacy/ |
+| Versa Poker marketing | https://versagaldigital.com/apps/versapoker/ |
+| Versa Poker support | https://versagaldigital.com/apps/versapoker/support/ |
+
+Use the Versa Poker Marketing URL and Support URL in their matching App Store Connect fields after the pages are live. A public App Store download link has not been added.
 
 Use the VersaPickle Support URL and Privacy Policy URL in their corresponding
 App Store Connect fields **after the pages are live**. The product URL can be
