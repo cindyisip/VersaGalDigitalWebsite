@@ -1,5 +1,13 @@
 # VersaGal Digital website
 
+## November 10, 2026: Versa Squabble Duo App Store launch
+
+- The game is live on the U.S. App Store: https://apps.apple.com/us/app/versa-squabble-duo/id6819529189
+- Added direct App Store download buttons to the Home page, Apps catalog,
+  Versa Squabble Duo product page, and Support page.
+- Updated product and support copy to show current availability and US$4.99
+  one-time pricing.
+
 ## November 6, 2026: App catalog themes and Versa Squabble Duo approval
 
 - Updated the Home and Apps catalog cards to use app-specific identity colors:
@@ -7,8 +15,7 @@
   green and emerald for Versa Poker Live Notes and Stats. Existing VersaLink,
   VersaPickle, and Versa Open Play card themes are retained.
 - Updated the Versa Squabble Duo product page with its navy and teal theme and
-  Apple approval status. The public App Store link is still pending, so the
-  website does not claim public downloads are available.
+  Apple approval status. At that time, its public App Store link was still pending.
 - VersaTally and Versa Poker remain in development.
 
 Static HTML and CSS for https://versagaldigital.com, hosted on GitHub Pages from
@@ -225,7 +232,8 @@ and pushing. The delivery package includes the patch and publishing steps.
 - App Store support URL: `https://versagaldigital.com/apps/versasquabbleduo/support/`
 - Privacy URL: `https://versagaldigital.com/apps/versasquabbleduo/privacy/`
 - Supports iPhone and iPad. Uses the supplied app icon, four iPhone screenshots at 480/800px, and four iPad screenshots at 600/1000px WebP. Screens retain their original proportions.
-- Apple has approved the app for App Store release. The public download URL is pending; add the verified listing link when it becomes available. Planned US$4.99 one-time price.
+- Available now on the U.S. App Store: https://apps.apple.com/us/app/versa-squabble-duo/id6819529189
+- U.S. price: US$4.99 one-time purchase.
 - Privacy copy reflects local history, server-backed online rooms, and optional WebRTC voice. Update it when data handling changes.
 
 ## Versa Open Play — October 22, 2026
