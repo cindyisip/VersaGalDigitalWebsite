@@ -87,6 +87,9 @@
 .wuv-page-night-glow .site-header { background: rgba(17, 17, 29, .92); border-color: var(--wuv-border); }
 .wuv-page-forest .brand, .wuv-page-forest .nav-links a { color: var(--wuv-ink); }
 .wuv-page-night-glow .brand, .wuv-page-night-glow .nav-links a { color: var(--wuv-ink); }
+.wuv-page-night-glow .wuv-hero h1 { color: var(--wuv-ink); }
+.wuv-page-night-glow .wuv-hero .eyebrow,
+.wuv-page-night-glow .wuv-section-heading .eyebrow { color: var(--wuv-gold); }
 .wuv-page-night-glow .wuv-hero {
   color: var(--wuv-ink);
   background: linear-gradient(132deg, #191a2a 0%, #252339 56%, #29243e 100%);
