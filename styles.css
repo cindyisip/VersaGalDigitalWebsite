@@ -557,3 +557,15 @@ body.squabble-theme {
 .app-catalog .product-card.poker-card .small-note {
   color: #f1fbf4;
 }
+
+
+/* Match the Wake Up Verse app mark to the rounded icon treatment used across app cards. */
+.wuv-app-product-card .product-visual .wuv-mark {
+  display: block;
+  width: min(180px, 64%);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 23%;
+  box-shadow: 0 12px 30px rgba(0, 28, 18, .17);
+}
