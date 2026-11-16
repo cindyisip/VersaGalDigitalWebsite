@@ -365,3 +365,8 @@ links use the existing VersaGal Digital support email.
 
 - Increased the app emblem size in the marketing-page hero, especially at phone widths, so it fills its square treatment instead of appearing small inside the surrounding space.
 - Renamed the Wake Up Verse stylesheet to `wakeup-verse-v2.css` to avoid browsers reusing the previously cached logo sizing.
+
+
+## November 16, 2026: Wake Up Verse theme preview and catalog consistency
+- Added an accessible Forest/Night Glow switcher to the Wake Up Verse marketing page; it changes the page palette and remembers the visitor's selection in that browser.
+- Kept the screenshot gallery showing screens from both in-app themes, and rounded the Wake Up Verse icon on the Apps catalog card to match the other app icons.
