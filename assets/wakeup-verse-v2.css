@@ -6,7 +6,7 @@
 .wuv-hero-grid { display:grid; grid-template-columns:minmax(0,1fr) minmax(230px,.7fr); gap:32px; align-items:center; }
 .wuv-hero h1 { max-width:760px; margin:.15em 0 .3em; font-size:clamp(2.65rem,6vw,5.15rem); line-height:.98; letter-spacing:-.055em; }
 .wuv-hero .lead { max-width:660px; font-size:clamp(1.12rem,2vw,1.36rem); line-height:1.65; }
-.wuv-hero-art { width:min(100%,310px); aspect-ratio:1; margin-inline:auto; border-radius:23%; overflow:hidden; background:#073522; box-shadow:0 24px 58px #20383130; }
+.wuv-hero-art { width:min(100%,330px); aspect-ratio:1; margin-inline:auto; border-radius:23%; overflow:hidden; background:#073522; box-shadow:0 24px 58px #20383130; }
 .wuv-hero-art img { display:block; width:100%; height:100%; object-fit:cover; border-radius:inherit; }
 .wuv-hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-top:26px; }
 .wuv-release-note { color:var(--wuv-muted); font-size:.94rem; margin-top:14px; }
@@ -44,7 +44,7 @@
 .app-card-top .wuv-mark { width:76px; height:76px; border-radius:18px; }
 @media (max-width:850px) {
  .wuv-hero-grid { grid-template-columns:1fr; }
- .wuv-hero-art { width:min(68vw,270px); }
+ .wuv-hero-art { width:min(82vw,340px); }
  .wuv-feature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
  .wuv-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
@@ -52,5 +52,5 @@
  .wuv-hero { border-radius:23px; padding:28px 22px; }
  .wuv-hero h1 { font-size:2.65rem; }
  .wuv-feature-grid,.wuv-gallery { grid-template-columns:1fr; }
- .wuv-hero-art { width:min(58vw,220px); }
+ .wuv-hero-art { width:min(84vw,330px); }
 }
