@@ -359,3 +359,9 @@ links use the existing VersaGal Digital support email.
 
 - Replaced the temporary website-only sunrise/book graphic with the clock, dove, and open-book emblem visible in the supplied Wake Up Verse app screen.
 - The site gallery continues to use the supplied in-app screenshots in Forest and Night Glow themes. A separate AppIcon export is not tracked in the app repository; the website icon is a square crop of the in-app header emblem.
+
+
+## November 16, 2026: Wake Up Verse mobile logo sizing
+
+- Increased the app emblem size in the marketing-page hero, especially at phone widths, so it fills its square treatment instead of appearing small inside the surrounding space.
+- Renamed the Wake Up Verse stylesheet to `wakeup-verse-v2.css` to avoid browsers reusing the previously cached logo sizing.
