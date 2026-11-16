@@ -15,9 +15,9 @@
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="../../assets/wakeup-verse-app-icon.png">
   <link rel="stylesheet" href="../../styles.css">
-  <link rel="stylesheet" href="../../assets/wakeup-verse-v2.css">
+  <link rel="stylesheet" href="../../assets/wakeup-verse-v2.css?v=3>
 </head>
-<body class="wuv-theme">
+<body class="wuv-theme wuv-page-forest" data-wuv-page-theme="forest">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="../../index.html" aria-label="VersaGal Digital home"><img src="../../assets/versagal-digital-mark.png" width="46" height="46" alt=""><span>VersaGal Digital</span></a><div class="nav-links"><a href="../index.html" aria-current="page">Apps</a><a href="../../music/index.html">Music</a><a href="../../about/index.html">About</a></div></nav></header>
   <main id="main">
@@ -27,7 +27,14 @@
           <p class="eyebrow">A calmer start, in your own words</p>
           <h1>Wake up with words that ground you.</h1>
           <p class="lead">Choose a verse for each alarm, or let a favorite meet you in the morning. Wake Up Verse brings thoughtful words, spoken audio, and optional quiet ambience into one personal routine.</p>
-          <div class="wuv-theme-pills" aria-label="Choose from two app themes"><span class="wuv-theme-pill">Forest</span><span class="wuv-theme-pill night">Night Glow</span></div>
+          <div class="wuv-theme-picker">
+            <span class="wuv-theme-picker-label" id="wuv-theme-picker-label">Preview the page theme</span>
+            <div class="wuv-theme-toggle" role="group" aria-labelledby="wuv-theme-picker-label">
+              <button type="button" data-wuv-theme-choice="forest" aria-pressed="true">Forest</button>
+              <button type="button" data-wuv-theme-choice="night-glow" aria-pressed="false">Night Glow</button>
+            </div>
+            <p class="wuv-theme-picker-note">Switch the page colors; the screenshots below show both app themes.</p>
+          </div>
           <div class="wuv-hero-actions"><a class="button" href="#screenshots">See the app</a><a class="text-link" href="support/">Support &amp; help</a><a class="text-link" href="privacy/">Privacy</a></div>
           <p class="wuv-release-note">The App Store listing will be linked here after release.</p>
         </div>
@@ -62,5 +69,35 @@
     <section class="container section"><div class="wuv-callout"><strong>Need help?</strong> Visit <a href="support/">Wake Up Verse Support</a>, or read the <a href="privacy/">Privacy Policy</a>.</div></section>
   </main>
   <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><img src="../../assets/versagal-digital-mark.png" width="52" height="52" alt=""><div><strong>VersaGal Digital</strong><span>Apps, music, and ideas made digital.</span></div></div><div class="footer-meta"><div><strong>Wake Up Verse</strong><a href="./index.html">Overview</a> · <a href="support/">Support</a> · <a href="privacy/">Privacy</a></div><div><a class="contact-address" href="mailto:support@versagaldigital.com">support@versagaldigital.com</a><br>© 2026 VersaGal Digital</div></div></div></footer>
+  <script>
+    (() => {
+      const page = document.body;
+      const buttons = [...document.querySelectorAll("[data-wuv-theme-choice]")];
+      const storageKey = "wuv-marketing-page-theme";
+      const validThemes = new Set(["forest", "night-glow"]);
+
+      const applyTheme = (theme, save = false) => {
+        if (!validThemes.has(theme)) return;
+        page.classList.toggle("wuv-page-forest", theme === "forest");
+        page.classList.toggle("wuv-page-night-glow", theme === "night-glow");
+        page.dataset.wuvPageTheme = theme;
+        buttons.forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.wuvThemeChoice === theme));
+        });
+        if (save) {
+          try { localStorage.setItem(storageKey, theme); } catch (_) {}
+        }
+      };
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => applyTheme(button.dataset.wuvThemeChoice, true));
+      });
+
+      try {
+        const savedTheme = localStorage.getItem(storageKey);
+        if (savedTheme) applyTheme(savedTheme);
+      } catch (_) {}
+    })();
+  </script>
 </body>
 </html>
