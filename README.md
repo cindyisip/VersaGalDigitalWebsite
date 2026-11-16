@@ -370,3 +370,4 @@ links use the existing VersaGal Digital support email.
 ## November 16, 2026: Wake Up Verse theme preview and catalog consistency
 - Added an accessible Forest/Night Glow switcher to the Wake Up Verse marketing page; it changes the page palette and remembers the visitor's selection in that browser.
 - Kept the screenshot gallery showing screens from both in-app themes, and rounded the Wake Up Verse icon on the Apps catalog card to match the other app icons.
+- Bumped the overview stylesheet query to v4 after improving Night Glow text contrast, so returning mobile browsers fetch the latest colors.
