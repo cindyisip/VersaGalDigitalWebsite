@@ -569,3 +569,61 @@ body.squabble-theme {
   border-radius: 23%;
   box-shadow: 0 12px 30px rgba(0, 28, 18, .17);
 }
+
+
+/* Wake Up Verse brand identity, using the supplied navy, cyan, violet, and gold artwork. */
+.app-home-card.wuv-app-product-card,
+.product-card.wuv-app-product-card {
+  border-color: rgba(105, 219, 245, .38);
+  background:
+    radial-gradient(circle at 92% 10%, rgba(39, 220, 232, .18), transparent 16rem),
+    radial-gradient(circle at 10% 94%, rgba(137, 88, 255, .19), transparent 20rem),
+    linear-gradient(135deg, #09152f 0%, #102a4c 56%, #1a1539 100%);
+  color: #f5f1ff;
+}
+.app-home-card.wuv-app-product-card::after { background: rgba(41, 211, 231, .17); }
+.app-home-card.wuv-app-product-card > * { position: relative; z-index: 1; }
+.app-home-card.wuv-app-product-card h3,
+.product-card.wuv-app-product-card .product-name { color: #fff8e7; }
+.app-home-card.wuv-app-product-card p,
+.product-card.wuv-app-product-card p,
+.product-card.wuv-app-product-card .compact-features,
+.product-card.wuv-app-product-card .compact-features li { color: #d6e1f3; }
+.app-home-card.wuv-app-product-card .app-card-meta { color: #f0d99e; }
+.app-home-card.wuv-app-product-card .text-link,
+.product-card.wuv-app-product-card .product-links a { color: #79eaf2; }
+.product-card.wuv-app-product-card .product-links { gap: 10px; }
+.product-card.wuv-app-product-card .product-links a {
+  padding: 8px 13px;
+  border: 1px solid rgba(105, 219, 245, .32);
+  border-radius: 999px;
+  background: rgba(45, 204, 222, .1);
+  color: #a4f5f7;
+  text-decoration: none;
+}
+.wuv-app-product-card .wuv-badge {
+  border: 1px solid rgba(247, 216, 139, .35);
+  background: rgba(247, 216, 139, .12);
+  color: #ffe5a2;
+}
+.wuv-app-product-card .product-visual {
+  background:
+    radial-gradient(circle at 20% 18%, rgba(36, 213, 235, .24), transparent 46%),
+    linear-gradient(145deg, #101e43, #25204d 60%, #132c4c);
+}
+.wuv-app-product-card .wuv-mark {
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 1;
+  border: 1px solid rgba(178, 226, 255, .38);
+  border-radius: 25%;
+  clip-path: inset(0 round 25%);
+  background: #0b1433;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, .28), 0 0 28px rgba(91, 202, 255, .12);
+}
+.wuv-app-product-card .product-visual .wuv-mark { width: min(180px, 68%); height: auto; }
+.app-home-card.wuv-app-product-card .app-card-top .wuv-mark {
+  flex: 0 0 84px;
+  width: 84px;
+  height: 84px;
+}

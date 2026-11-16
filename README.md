@@ -371,3 +371,11 @@ links use the existing VersaGal Digital support email.
 - Added an accessible Forest/Night Glow switcher to the Wake Up Verse marketing page; it changes the page palette and remembers the visitor's selection in that browser.
 - Kept the screenshot gallery showing screens from both in-app themes, and rounded the Wake Up Verse icon on the Apps catalog card to match the other app icons.
 - Bumped the overview stylesheet query to v4 after improving Night Glow text contrast, so returning mobile browsers fetch the latest colors.
+
+
+## November 16, 2026: Wake Up Verse brand artwork and site theme
+
+- Replaced the old forest-green mark in the site’s Home, Apps, overview, Support, and Privacy sections with the supplied rounded Wake Up Verse logo.
+- Used the supplied wide banner in the overview hero and the feature graphic for Wake Up Verse social previews.
+- Applied the artwork’s deep navy, cyan, violet, and gold palette to the Wake Up Verse Home and Apps cards and refined the Night Glow page theme; the Forest/Night Glow preview toggle remains available on the overview.
+- Added cache-busting versions to the affected stylesheets so mobile browsers fetch the new artwork and colors.
