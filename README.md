@@ -163,6 +163,9 @@ Pages deployment status after pushing and verify the public URLs below.
 | Keeper privacy | https://versagaldigital.com/apps/versalink/privacy/ |
 | Versa Poker marketing | https://versagaldigital.com/apps/versapoker/ |
 | Versa Poker support | https://versagaldigital.com/apps/versapoker/support/ |
+| Wake Up Verse marketing | https://versagaldigital.com/apps/wakeupverse/ |
+| Wake Up Verse support | https://versagaldigital.com/apps/wakeupverse/support/ |
+| Wake Up Verse privacy | https://versagaldigital.com/apps/wakeupverse/privacy/ |
 
 Use the Versa Poker Marketing URL and Support URL in their matching App Store Connect fields after the pages are live. A public App Store download link has not been added.
 
@@ -338,3 +341,15 @@ Availability is clearly marked as in development with no public download link.
 The current development build is described as storing expense records on the
 device; sign-in and device-to-device sync are still in development. Support
 links use the existing VersaGal Digital support email.
+
+
+## November 16, 2026: Wake Up Verse launch pages and App Store screenshots
+
+- Added Wake Up Verse overview, Support, and Privacy pages, and connected them from the Home page, Apps catalog, footer, and XML sitemap.
+- Added seven portrait App Store screenshot designs for iPhone (1320 × 2868 PNG), plus optimized WebP versions for the marketing page. The set shows both Forest and Night Glow themes and uses screens supplied for the app.
+- Use these URLs in App Store Connect after the site deployment completes:
+  - Marketing: https://versagaldigital.com/apps/wakeupverse/
+  - Support: https://versagaldigital.com/apps/wakeupverse/support/
+  - Privacy: https://versagaldigital.com/apps/wakeupverse/privacy/
+- Before submission, verify the App Store privacy answers match both the shipped app and the third-party Bible lookup provider. The provider states that its server logs can include IP address, request URL/query, and other technical metadata, and that logs are deleted after 30 days.
+- No mobile app binary or App Store listing was uploaded or released by this website change.
