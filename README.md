@@ -353,3 +353,9 @@ links use the existing VersaGal Digital support email.
   - Privacy: https://versagaldigital.com/apps/wakeupverse/privacy/
 - Before submission, verify the App Store privacy answers match both the shipped app and the third-party Bible lookup provider. The provider states that its server logs can include IP address, request URL/query, and other technical metadata, and that logs are deleted after 30 days.
 - No mobile app binary or App Store listing was uploaded or released by this website change.
+
+
+## November 16, 2026: Wake Up Verse website icon correction
+
+- Replaced the temporary website-only sunrise/book graphic with the clock, dove, and open-book emblem visible in the supplied Wake Up Verse app screen.
+- The site gallery continues to use the supplied in-app screenshots in Forest and Night Glow themes. A separate AppIcon export is not tracked in the app repository; the website icon is a square crop of the in-app header emblem.
