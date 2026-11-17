@@ -1,5 +1,21 @@
 # VersaGal Digital website
 
+## November 17, 2026: Wake Up Words pages
+
+- Added Wake Up Words, the general (non-religious) sister app of Wake Up Verse:
+  overview, support, and privacy pages at `/apps/wakeupwords/`, in the app's own
+  "sunrise pop" look (`assets/wakeup-words.css`, Google Fonts: Bricolage Grotesque,
+  Fraunces, Plus Jakarta Sans).
+- Assets in `assets/wakeupwords/`: app icon (180, 512) and a 1200x630 share image.
+  The overview's phone screens are drawn in HTML; replace them with real App Store
+  screenshots after release.
+- Added Wake Up Words cards on Home and Apps (status: Coming soon), footer links
+  on Home and Apps, and the three URLs in `sitemap.xml`.
+- URLs for App Store Connect:
+  - Marketing: https://versagaldigital.com/apps/wakeupwords/
+  - Support: https://versagaldigital.com/apps/wakeupwords/support/
+  - Privacy: https://versagaldigital.com/apps/wakeupwords/privacy/
+
 ## November 10, 2026: Versa Squabble Duo App Store launch
 
 - The game is live on the U.S. App Store: https://apps.apple.com/us/app/versa-squabble-duo/id6819529189
