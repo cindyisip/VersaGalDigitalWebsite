@@ -128,3 +128,24 @@
 .app-home-card.wuw-app-product-card::after { background: rgba(255, 201, 60, .45); }
 .app-home-card.wuw-app-product-card h3 { color: #2A1446; }
 .app-home-card.wuw-app-product-card .text-link, .wuw-app-product-card .product-links a { color: #B8460F; }
+
+/* Nightstand and Frame spotlight: real screenshots on a night panel. */
+.night-spot { position: relative; overflow: hidden; padding: clamp(28px, 5vw, 64px) clamp(18px, 4vw, 56px); border-radius: 32px; background: var(--ns-bg); color: #F4EEFF; box-shadow: 0 24px 60px rgba(20, 10, 40, .22); }
+.night-spot-head { max-width: 760px; margin: 0 auto 34px; text-align: center; }
+.night-spot-head .eyebrow { color: var(--ns-accent); }
+.night-spot-head .eyebrow::before { background: var(--ns-accent); }
+.night-spot-head h2 { margin: .1em 0 .35em; color: #FFF8EC; font-size: clamp(2rem, 4.4vw, 3.2rem); line-height: 1.05; }
+.night-spot-head p { margin: 0; color: rgba(244, 238, 255, .78); line-height: 1.7; }
+.night-spot-phones { display: grid; grid-template-columns: repeat(2, minmax(0, 340px)); justify-content: center; gap: clamp(18px, 4vw, 48px); }
+.night-spot figure { margin: 0; }
+.night-spot-phones img { display: block; width: 100%; height: auto; border-radius: 34px; border: 6px solid #0B0712; box-shadow: 0 20px 50px rgba(0, 0, 0, .45), 0 0 0 1px rgba(255, 255, 255, .08); }
+.night-spot figcaption { margin-top: 16px; color: rgba(244, 238, 255, .78); font-size: .98rem; line-height: 1.6; text-align: center; }
+.night-spot figcaption strong { display: block; margin-bottom: 2px; color: #FFF8EC; font-size: 1.12rem; }
+.night-spot-wide { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(14px, 3vw, 28px); max-width: 1000px; margin: clamp(30px, 5vw, 52px) auto 0; }
+.night-spot-wide img { display: block; width: 100%; height: auto; border-radius: 20px; border: 5px solid #0B0712; box-shadow: 0 16px 40px rgba(0, 0, 0, .4); }
+@media (max-width: 640px) {
+  .night-spot-phones { grid-template-columns: minmax(0, 300px); }
+  .night-spot-wide { grid-template-columns: 1fr; }
+}
+.night-spot { --ns-bg: radial-gradient(120% 80% at 85% 0%, #4A2A7A 0%, #2A1446 55%, #160A27 100%); --ns-accent: #FFC93C; }
+.night-spot-note { margin: 16px 0 0; color: rgba(244, 238, 255, .7); font-size: .95rem; text-align: center; }
