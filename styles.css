@@ -593,6 +593,8 @@ body.squabble-theme {
 .app-home-card.wuv-app-product-card .text-link,
 .product-card.wuv-app-product-card .product-links a { color: #79eaf2; }
 .product-card.wuv-app-product-card .product-links { gap: 10px; }
+.wuv-app-product-card .button { border-color: #79eaf2; background: #79eaf2; color: #09152f; }
+.product-card.wuv-app-product-card .button-row, .product-card.wuw-app-product-card .button-row { margin-top: 22px; }
 .product-card.wuv-app-product-card .product-links a {
   padding: 8px 13px;
   border: 1px solid rgba(105, 219, 245, .32);
