@@ -1,5 +1,17 @@
 # VersaGal Digital website
 
+## November 18, 2026: Wake Up tester guides
+
+- New pages `/testers/iphone/` (TestFlight: install TestFlight, ignore "Redeem", open the
+  app link, Accept/Install, feedback, free test purchases) and `/testers/android/`
+  (same Google account everywhere, join the Google Group, Become a tester, install,
+  14-day requirement, Android unlock is a real purchase). Each has per-app anchors
+  `#wakeupverse` and `#wakeupwords`.
+- The "Join the iPhone beta" / "Join the Android test" buttons on Home, Apps and both
+  Wake Up app pages now open these guides instead of TestFlight / Google Groups.
+- **Remove the "Test status" box on the Android guide once Google approves the closed tests.**
+- `styles.css?v=20261118-guides`; guide styles are at the end of `styles.css` (`.wu-guide-*`).
+
 ## November 17, 2026: Wake Up Words pages
 
 - Added Wake Up Words, the general (non-religious) sister app of Wake Up Verse:
