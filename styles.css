@@ -632,6 +632,6 @@ body.squabble-theme {
 
 /* Wake Up apps: iPhone / Android beta buttons */
 .wu-beta-buttons { justify-content: center; }
-.wu-beta-buttons .button, .wu-beta-buttons .wuw-button { flex-direction: column; line-height: 1.15; padding-top: 8px; padding-bottom: 8px; }
+.wu-beta-buttons .button, .wu-beta-buttons .wuw-button { flex-direction: column; line-height: 1.15; padding-top: 8px; padding-bottom: 8px; min-width: 15.5rem; }
 .wu-btn-sub { display: block; margin-top: 3px; font-size: .78rem; font-weight: 600; opacity: .85; }
 .wu-links-row, .wu-beta-buttons + .wu-links-row { margin-top: 16px; }
