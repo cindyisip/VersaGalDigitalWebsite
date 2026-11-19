@@ -293,3 +293,6 @@
 }
 .night-spot { --ns-bg: radial-gradient(120% 80% at 85% 0%, #3B3175 0%, #1D1A3E 55%, #0E0D1E 100%); --ns-accent: #E8C77E; }
 .night-spot-note { margin: 16px 0 0; color: rgba(244, 238, 255, .7); font-size: .95rem; text-align: center; }
+
+.wuv-hero-actions .button { flex-direction: column; line-height: 1.15; padding-top: 8px; padding-bottom: 8px; }
+.wuv-hero-actions .wu-btn-sub { display: block; margin-top: 3px; font-size: .78rem; font-weight: 600; opacity: .85; }
