@@ -5,6 +5,13 @@
   --tally-green: #047857;
   --tally-muted: #64748b;
   --tally-line: #dce5ef;
+  /* Shared site colors (links, document pages, FAQ) follow the VersaTally palette instead of plum. */
+  --plum-900: #101a30;
+  --plum-700: #047857;
+  --lavender-100: #e6f6ef;
+  --muted: #64748b;
+  --line: rgba(16, 26, 48, 0.12);
+  --shadow: 0 24px 64px rgba(16, 26, 48, 0.1);
   background:
     radial-gradient(circle at 8% 8%, rgba(16, 185, 129, 0.11), transparent 27rem),
     radial-gradient(circle at 92% 20%, rgba(203, 213, 225, 0.4), transparent 30rem),
