@@ -371,6 +371,18 @@ device; sign-in and device-to-device sync are still in development. Support
 links use the existing VersaGal Digital support email.
 
 
+## November 19, 2026: VersaTally store submission pages
+
+- Rewrote the VersaTally Privacy Policy and Support pages for the release build: email-code and Sign in with Apple accounts, shared Trips and Households stored on Supabase, RevenueCat purchases, on-device receipt scanning and attachments, permanent notes, and account deletion.
+- Added Terms of Use (Trip Pass, Unlimited monthly/annual, 7-day trial, auto-renewal and cancellation terms) and a Delete Account page for Google Play.
+- Overview, Apps and Home now say "Coming soon" instead of "In development", and link to the VersaTally support page instead of a mailto link. Sitemap includes the new pages.
+- Use these URLs in App Store Connect and Google Play after the site deployment completes:
+  - Marketing: https://versagaldigital.com/apps/versatally/
+  - Support: https://versagaldigital.com/apps/versatally/support/
+  - Privacy: https://versagaldigital.com/apps/versatally/privacy/
+  - Terms of Use (EULA): https://versagaldigital.com/apps/versatally/terms/
+  - Account deletion (Google Play): https://versagaldigital.com/apps/versatally/delete-account/
+
 ## November 16, 2026: Wake Up Verse launch pages and App Store screenshots
 
 - Added Wake Up Verse overview, Support, and Privacy pages, and connected them from the Home page, Apps catalog, footer, and XML sitemap.
